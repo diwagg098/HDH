@@ -99,12 +99,12 @@
         <img src="{{ 'http://localhost/dashboard-hdh/public/images/rooms/' . $row->foto}}" alt="">
         <div class="info">
             <h1>{{ $row->nama_kamar}}</h1>
-            <div style="display:inline-flex; width: 300px">
+            <div style="">
                 @foreach (explode(",",$row->fitur) as $fiture)
                 <p>&#x2713;{{ $fiture}}</p>
                 @endforeach
             </div>
-            <button onclick="openNav()" style="width: 100px"> Book</button>
+            <button onclick="openNav()"> Book</button>
         </div>
     </div>
     @endforeach

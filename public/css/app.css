@@ -62,15 +62,15 @@
 }
 
 .fitur {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     display: flex;
     flex-wrap: wrap;
 }
 
 .fitur p {
     color: #17b3e0;
-    font-size: 12px;
-    padding: 8px;
+    font-size: 14px;
+    padding: 10px;
 }
 
 .cal {
@@ -455,7 +455,6 @@ header {
     position: absolute;
     left: 0;
     bottom: 0;
-    padding: 15px 30px;
     margin: 60px;
     text-align: left;
     display: grid;
@@ -481,12 +480,14 @@ header {
     background: #17b3e0;
     color: white;
     border-radius: 20px;
-    width: 50%;
+    width: 200px;
     outline: none;
     border: 2px solid white;
     cursor: pointer;
     font-weight: 600;
 }
+
+
 
 .navigation {
     z-index: 2;
@@ -541,9 +542,16 @@ header {
     }
 
     .info button {
-        width: 30%;
-        padding: 1px 2px;
-        border: 0;
+        padding: 1px 1px;
+        background: #17b3e0;
+        color: white;
+        border-radius: 20px;
+        width: 20%;
+        height: 30px;
+        outline: none;
+        border: 2px solid white;
+        cursor: pointer;
+        font-weight: 600;
     }
 
 
@@ -1122,23 +1130,12 @@ header {
     border-radius: 20px;
 }
 
-
 .res3 {
     flex-direction: column;
     display: flex;
     width: 80%;
     margin-top: 30px;
 }
-
-.cb1 {
-    float: left;
-    display: flex;
-    gap: 20px;
-    justify-content: space-around;
-}
-
-
-
 
 .res3 h1 {
     width: 300px;
@@ -1155,10 +1152,6 @@ header {
     cursor: pointer;
     margin-top: 30px;
     transition: .2s;
-}
-
-#buton-payment:hover {
-    background: black;
 }
 
 .res3 button:hover {
@@ -1557,4 +1550,34 @@ h3 {
 
 .checkout-item h1 {
     color: #17b3e0;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .headnav {
+        width: 100%;
+    }
+
+    .headnav a {
+        font-size: 10px;
+    }
+
+    .head img {
+        width: 10%;
+    }
 }
